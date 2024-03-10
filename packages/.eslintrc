@@ -49,12 +49,12 @@
     "@typescript-eslint/explicit-module-boundary-types": 0,
     "@typescript-eslint/no-empty-function": 0,
     "@typescript-eslint/no-empty-interface": 1,
-    "no-console": [
-      "error",
-      {
-        "allow": ["warn", "error", "info"]
-      }
-    ],
+    // "no-console": [
+    //   "error",
+    //   {
+    //     "allow": ["warn", "error", "info"]
+    //   }
+    // ],
     "prefer-const": 0,
     "no-var": 1,
     "prefer-rest-params": 0
