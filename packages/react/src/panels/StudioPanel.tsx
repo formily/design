@@ -20,11 +20,13 @@ const StudioPanelInternal: React.FC<IStudioPanelProps> = ({
   const prefix = usePrefix('main-panel')
   const position = usePosition()
   const classNameBase = cls('root', position, props.className)
+  const params = Object.fromEntries(new URLSearchParams(location.search))
   if (logo || actions) {
     return (
       <div {...props} className={cls(`${prefix}-container`, classNameBase)}>
         <div className={prefix + '-header'}>
           <div className={prefix + '-header-logo'}>{logo}</div>
+          <div>{params.name}</div>
           <div className={prefix + '-header-actions'}>{actions}</div>
         </div>
         <div className={prefix}>{props.children}</div>

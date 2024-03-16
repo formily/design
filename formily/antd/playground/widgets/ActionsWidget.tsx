@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { Space, Button, Radio } from 'antd'
-import { GithubOutlined } from '@ant-design/icons'
+// import { GithubOutlined } from '@ant-design/icons'
 import { useDesigner, TextWidget } from '@designable/react'
 import { GlobalRegistry } from '@designable/core'
 import { observer } from '@formily/react'
@@ -38,17 +38,17 @@ export const ActionsWidget = observer(() => {
         <GithubOutlined />
         Github
       </Button> */}
-      <Button
+      {/* <Button
         onClick={() => {
-          saveSchema(designer)
+          saveSchema(designer, false)
         }}
       >
         <TextWidget>Save</TextWidget>
-      </Button>
+      </Button> */}
       <Button
         type="primary"
         onClick={() => {
-          saveSchema(designer)
+          saveSchema(designer, true)
         }}
       >
         <TextWidget>Publish</TextWidget>
