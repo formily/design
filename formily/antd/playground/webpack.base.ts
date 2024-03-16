@@ -48,6 +48,9 @@ export default {
     'react-dom': 'ReactDOM',
     moment: 'moment',
     antd: 'antd',
+    // 使用 externals 配置将 Ant Design Icons 指定为外部依赖，不进行打包处理。这样，在运行时会从 CDN 加载 Ant Design Icons。
+    '@ant-design/icons': 'icons', // 这里假设从 CDN 加载的全局变量为 'icon'
+    // 'monaco-editor': 'monaco' // 这里假设从CDN加载的全局变量为'monaco'
   },
   module: {
     rules: [
