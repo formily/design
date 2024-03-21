@@ -8,13 +8,17 @@ const logo = {
 }
 
 export const LogoWidget: React.FC = () => {
-  const url = logo[useTheme()]
+  const url = 'http://cdn.zuo11.com/imgs/avatar.jpg'
+  // logo[useTheme()]
   return (
     <div style={{ display: 'flex', alignItems: 'center', fontSize: 14 }}>
-      <img
-        src={url}
-        style={{ margin: '12px 8px', height: 18, width: 'auto' }}
-      />
+      <div>
+        <img
+          src={url}
+          style={{ margin: '12px 8px', height: 18, width: 'auto' }}
+        />
+        Formily 低代码设计器
+      </div>
     </div>
   )
 }
