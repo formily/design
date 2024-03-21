@@ -64,7 +64,8 @@
     "@designable/formily-setters": "1.0.0-beta.45",
     "@designable/formily-transformer": "1.0.0-beta.45",
     "@designable/react": "1.0.0-beta.45",
-    "axios": "^1.6.7"
+    "axios": "^1.6.7",
+    "clean-webpack-plugin": "^4.0.0"
   },
   "publishConfig": {
     "access": "public"

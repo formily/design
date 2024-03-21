@@ -6,9 +6,13 @@ const Registry = {
 
 export const setNpmCDNRegistry = (registry: string) => {
   Registry.cdn = registry
+  const isProduction = process.env.NODE_ENV === 'production'
+  const vsPath = isProduction
+    ? 'http://cdn.zuo11.com/lib/vs'
+    : `${registry}/monaco-editor@0.30.1/min/vs`
   loader.config({
     paths: {
-      vs: `${registry}/monaco-editor@0.30.1/min/vs`,
+      vs: vsPath,
     },
   })
 }
