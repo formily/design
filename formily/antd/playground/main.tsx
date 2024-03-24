@@ -66,7 +66,8 @@ import {
   FormGrid,
 } from '../src'
 
-setNpmCDNRegistry('//unpkg.com')
+// setNpmCDNRegistry('//unpkg.com')
+setNpmCDNRegistry('http://cdn.zuo11.com')
 
 GlobalRegistry.registerDesignerLocales({
   'zh-CN': {

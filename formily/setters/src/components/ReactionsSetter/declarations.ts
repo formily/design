@@ -20,7 +20,7 @@ const loadDependencies = async (deps: IDependency[]) => {
 export const initDeclaration = async () => {
   return MonacoInput.loader.init().then(async (monaco) => {
     const deps = await loadDependencies([
-      { name: '@formily/core', path: 'dist/formily.core.all.d.ts' },
+      { name: 'lib', path: 'vs/formily.core.all.d.ts' },
     ])
     deps?.forEach(({ name, library }) => {
       monaco.languages.typescript.typescriptDefaults.addExtraLib(
