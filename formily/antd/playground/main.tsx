@@ -55,6 +55,7 @@ import {
   Upload,
   Switch,
   Text,
+  Button,
   Card,
   ArrayCards,
   ObjectContainer,
@@ -156,7 +157,7 @@ const App = () => {
               title="sources.Arrays"
               sources={[ArrayCards, ArrayTable]}
             />
-            <ResourceWidget title="sources.Displays" sources={[Text]} />
+            <ResourceWidget title="sources.Displays" sources={[Text, Button]} />
           </CompositePanel.Item>
           <CompositePanel.Item title="panels.OutlinedTree" icon="Outline">
             <OutlineTreeWidget />
@@ -196,6 +197,7 @@ const App = () => {
                       Upload,
                       Switch,
                       Text,
+                      Button,
                       Card,
                       ArrayCards,
                       ArrayTable,
